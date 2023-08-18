@@ -1,0 +1,60 @@
+Arguments: 
+  /Users/krzysztof.hamerszmit/.nvm/versions/node/v16.19.0/bin/node /Users/krzysztof.hamerszmit/.cache/node/corepack/yarn/1.22.19/bin/yarn.js add unleash-proxy-client
+
+PATH: 
+  /Users/krzysztof.hamerszmit/.nvm/versions/node/v16.19.0/bin:/Users/krzysztof.hamerszmit/.fly/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/krzysztof.hamerszmit/.nvm/versions/node/v16.19.0/bin:/Users/krzysztof.hamerszmit/.fly/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.19.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/krzysztof.hamerszmit/Library/Caches/Yarn/v6/npm-glob-parent-6.0.2-6d237d99083950c79290f24c7642a3de9a28f9e3-integrity/node_modules/glob-parent/README.md' -> '/Users/krzysztof.hamerszmit/Desktop/PRIV_CODE/hi-svelt/node_modules/eslint/node_modules/glob-parent/README.md'
+
+npm manifest: 
+  {
+  	"name": "hi-svelt",
+  	"version": "0.0.1",
+  	"scripts": {
+  		"dev": "vite dev",
+  		"build": "vite build",
+  		"preview": "vite preview",
+  		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+  		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+  		"test": "npm run test:integration && npm run test:unit",
+  		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+  		"format": "prettier --plugin-search-dir . --write .",
+  		"test:integration": "playwright test",
+  		"test:unit": "vitest"
+  	},
+  	"devDependencies": {
+  		"@fontsource/fira-mono": "^4.5.10",
+  		"@neoconfetti/svelte": "^1.0.0",
+  		"@playwright/test": "^1.28.1",
+  		"@sveltejs/adapter-auto": "^2.0.0",
+  		"@sveltejs/kit": "^1.20.4",
+  		"@types/cookie": "^0.5.1",
+  		"eslint": "^8.28.0",
+  		"eslint-config-prettier": "^8.5.0",
+  		"eslint-plugin-svelte": "^2.30.0",
+  		"prettier": "^2.8.0",
+  		"prettier-plugin-svelte": "^2.10.1",
+  		"svelte": "^4.0.5",
+  		"svelte-check": "^3.4.3",
+  		"typescript": "^5.0.0",
+  		"vite": "^4.4.2",
+  		"vitest": "^0.32.2"
+  	},
+  	"type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
