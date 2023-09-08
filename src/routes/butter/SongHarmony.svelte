@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import Butter from 'buttercms';
 	import { onMount } from 'svelte';
 	const butter = Butter('4c70e6ea4d3f7b58e11a604674c85560940af298');
-	let songData = {};
+	let songData: any = {};
 
 
 	onMount(() => {
