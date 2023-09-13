@@ -2,9 +2,22 @@
 	import Butter from 'buttercms';
 	import { onMount } from 'svelte';
 
-	const butter = Butter(import.meta.env.VITE_APP_TITLE);
-	let songData: any = {};
+	const butter = Butter(import.meta.env.VITE_BUTTER_ID);
+	let songData: SongHarmony = {};
 
+  type AudioMedia = string;
+
+  interface SongHarmony {
+    background_image: string;
+    song_title: string;
+    lyrics: string;
+    voicings: Voicing[];
+  }
+
+  interface Voicing {
+    name: string;
+    audio: AudioMedia
+  }
 
 	onMount(() => {
 		butter.content
@@ -56,7 +69,13 @@
   </button>
 
   <section id="audio-wrapper" class="audio-wrapper glass">
+    {#if songData.voicings?.length}
+    {#each songData.voicings as voicing }
+      name: {voicing.name}
 
+    {/each}
+
+    {/if}
 
   </section>
 
